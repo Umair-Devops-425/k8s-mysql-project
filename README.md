@@ -16,6 +16,15 @@ A Kubernetes project that deploys MySQL with persistent storage, secrets, and se
 2. Start Minikube
 3. Apply manifests:
 
+<!-- Commands -->
+```
+kubectl apply -f mysql-pv-pvc.yaml
+kubectl apply -f mysql-secret.yaml
+kubectl apply -f mysql-deployment.yaml
+kubectl apply -f mysql-service.yaml
+```
+
+<!-- ## Note on Secrets -->
 ## 🔐 Note on Secrets
 The `mysql-secret.yaml` file is excluded from this repo for security reasons.
 
